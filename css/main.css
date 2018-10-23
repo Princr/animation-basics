@@ -1,0 +1,345 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@font-face{
+    font-family: bebas-thin;
+	src: url('../fonts/BebasNeue\ Thin.otf');
+}
+@font-face{
+    font-family: bebas-regular;
+    src: url('../fonts/BebasNeue\ Regular.otf')
+}
+@font-face{
+    font-family: bebas-book;
+    src: url('../fonts/BebasNeue\ Book.otf')
+}
+@font-face{
+    font-family: bebas-bold;
+    src: url('../fonts/BebasNeue\ Bold.otf')
+}
+@font-face{
+    font-family: bebas-kai;
+    src: url('../fonts/BebasKai.otf')
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.cl0-1{
+    color: #00a1f1
+}
+.cl0-2{
+    color: #fff
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background: url("../images/bck-grnd1.png") repeat ;
+    
+    height: 100vh;
+    display: table;
+    overflow: hidden;
+}
+.mobile{
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    width: 90%;
+    height: 100%;
+    background: url("../images/bck-grnd1.png") repeat;
+    opacity: 0;
+}
+.about-head{
+    color: #fff;
+}
+.about-pt{
+    color: #fff;
+}
+.about-ft{
+    padding-top: 1.5rem;
+    color: #fff;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.display-4{
+    font-family: bebas-kai;
+}
+.jumbs{
+    background: url("../images/bck-grnd1.png") repeat ;
+}
+.jmb{
+    background: url("../images/bck-grnd1.png") repeat ;
+}
+.soc-media{
+    width: 10%;
+    color: #fff;
+}
+.kb-wrapper{
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+.pr-wrapper{
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+.cm-wrapper{
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+.img-wrapper{
+    position: absolute;
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 0;
+    top: 25%;
+    left: 0;
+    width: 100%;
+}
+.mobi-img-wrapper{
+    position: absolute;
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 0;
+    top: 5%;
+    left: 5rem;
+    width: 10rem;
+}
+.ds-wrapper{
+    opacity: 0;
+    transform: translateY(10%);
+}
+.cm-head{
+    font-family: bebas-kai;
+    color: #fff
+}
+.st0{fill:#04080f;}
+
+path {
+    stroke: #fff;
+    fill: #fff;
+}
+.morph-bx1{
+    background: #fff;
+    position: absolute;
+    transform: translateY(0);
+    transform: translateX(0);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 50%;
+    height: 100vh;
+}
+.mobile2{
+    opacity: 0;
+}
+
+/*--------------------------MEDIA QUIRES----------------------------------------------*/
+
+
+
+@media screen and (min-width: 320px) and (max-width: 374.98px) and (orientation:portrait){
+    .mobi-img-wrapper{
+        width: 7rem;
+        left: 7rem;
+    }
+    .jmb{
+        margin-left: 2rem;
+        padding: 2rem 2rem;
+     }
+    .jmb>h1{
+       font-size: 2.5rem;
+    }
+    .jmb>p{
+        font-size: 0.7rem;
+     }
+     .fa-3x-c>{
+         font-size: 1em;
+     }
+}
+@media screen and (min-width: 375px) and (max-width: 413.98px) and (orientation:portrait){
+    .mobi-img-wrapper{
+        width: 8rem;
+        transform: translateX(50%);
+    }
+    .jmb{
+        margin-left: 2rem;
+        padding: 2rem 2rem;
+     }
+    .jmb>h1{
+       font-size: 2.5rem;
+    }
+    .jmb>p{
+        font-size: 0.7rem;
+     }
+     .fa-3x-c>{
+         font-size: 1em;
+     }
+}
+
+@media screen and (max-width: 575.98px){
+    
+}
+
+@media screen and (min-width: 576px ) and (max-width: 759.98px) {
+    .about-pt{
+        font-size: 0.35rem;
+    }
+    .jumbs{
+        height: 80vh;
+        padding: 2rem 2rem;
+    }
+    .img-wrapper{
+        top: 15%;
+        left: 37.5%;
+        width: 30%;
+    }
+    .about-head{
+        font-size: 1.25rem;    
+    }
+}
+
+@media screen and(min-width: 760px ) and (max-width: 991.98px){
+    .cm-head{
+        font-size: 7.75rem;
+    }
+    .img-wrapper{
+        top: 15%;
+        left: 0;
+        width: 30%;
+    }
+    .about-pt{
+        font-size: 0.75rem
+    }
+}
+
+@media screen and (min-width: 992px ) and (max-width: 1199.98px ){
+    .cm-head{
+        font-size: 4.25rem;
+    }
+    
+    .about-pt{
+        font-size: 0.75rem
+    }
+    .img-wrapper{
+        width: 25rem;
+        top: 5rem;
+        left: 20rem;
+    }
+}
+@media screen and (min-width: 1200px ) and (max-width: 1439.98px ){
+    .cm-head{
+        font-size: 5.50rem;
+    }
+    .img-wrapper{
+        top: 15%;
+        left: 0;
+    }
+}
+@media screen and (min-width: 700px ) and (orientation: portrait){
+    .img-wrapper{
+        position: absolute;
+        margin-top: 10rem;
+        top: 0;
+        right: 0;
+        left: 50%;
+        transform: translateX(50%);
+    }
+    .jumbs{
+        opacity: 0;
+    }
+    .mobile2{
+        animation: opac 20s;
+        animation-delay: 20s;
+        transition-property: opacity; 
+        transition-delay: 4s;
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 200px;
+        margin-left: 25%;
+        margin-right: auto; 
+    }
+    @keyframes opac {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    .morph-bx1{
+        opacity: 0;
+    }
+    .display-4{
+        
+        font-size: 4.5rem;
+    }
+    .jmb{
+        background: none ;
+    }
+}
+@media screen and (min-width: 1000px) and (orientation: portrait){
+    .img-wrapper{
+        position: absolute;
+        margin-top: 10rem;
+        top: 0;
+        right: 0;
+        left: 50%;
+        transform: translateX(50%);
+    }
+    .jumbs{
+        opacity: 0;
+    }
+    .mobile2{
+        animation: opac 20s;
+        animation-delay: 20s;
+        transition-property: opacity; 
+        transition-delay: 4s;
+        position: relative;
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    @keyframes opac {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    .morph-bx1{
+        opacity: 0;
+    }
+    .display-4{
+        
+        font-size: 4.5rem;
+    }
+    .jmb{
+        background: none ;
+    }
+    
+}
+
+@media screen and (min-width: 1440px ) {
+    .cm-head{
+        font-size: 8.25rem;
+    }
+    .lead{
+        font-size: 1.5rem;
+    }
+    .display-4{
+        font-size: 4.5rem;  
+    }
+    
+}
